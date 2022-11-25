@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+:root {
+	--Light-Grey: hsl(217, 12%, 63%);
+	--Medium-Grey: hsl(216, 12%, 54%);
+	--Dark-Blue: hsl(213, 19%, 18%);
+	--Very-Dark-Blue: hsl(216, 12%, 8%);
+	--Main: hsl(25, 97%, 53%);
+}
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: hsl(217, 12%, 63%);
+	background-color: hsl(216, 12%, 8%);
+}
+main {
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	height: 100%;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.window {
+	width: 375px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: rgba(34, 41, 52, 1);
+	background-image: radial-gradient(
+		circle,
+		rgba(34, 41, 52, 1) 16%,
+		rgba(24, 32, 42, 1) 100%
+	);
+	border-radius: 25px;
+}
+
+.star-container {
+	position: relative;
+	background-color: rgba(40, 47, 57, 0.4);
+	width: 45px;
+	height: 45px;
+	margin: 25px;
+	border-radius: 50%;
+}
+.star {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 14px;
+}
+.off {
+	display: none;
+}
+
+.header {
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+	font-size: 24px;
+	margin: 0 25px;
+}
+.window-text {
+	margin: 25px;
+}
+
+.buttons {
+	width: 100%;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.buttons button {
+	width: 48px;
+	height: 48px;
+	border: none;
+	border-radius: 50%;
+	text-align: center;
+	color: var(--Light-Grey);
+	font-size: 16px;
+	background-color: hsl(213deg 20% 18%);
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover {
+	background-color: var(--Main);
+	color: white;
+}
+.buttons button:hover {
+	background-color: var(--Main);
+	color: white;
+}
+.buttons .clicked {
+	background-color: var(--Medium-Grey);
+	color: white;
+}
+
+#submit {
+	width: 330px;
+	height: 48px;
+	margin: 25px 25px;
+	background-color: var(--Main);
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border: none;
+	border-radius: 24px;
+	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
+}
+#submit:hover {
+	background-color: white;
+	color: var(--Main);
+}
+.thanks-window {
+	align-items: center;
+}
+.thanks-img {
+	margin: 50px auto;
+	margin-bottom: 30px;
+}
+
+.rating {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: hsl(213deg 20% 18%);
+	color: hsl(26deg 49% 53%);
+}
+.thanks-text {
+	text-align: center;
+	line-height: 20px;
+	word-spacing: 1px;
+}
