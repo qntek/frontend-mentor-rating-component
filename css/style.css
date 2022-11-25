@@ -60,7 +60,7 @@ main {
 	background-image: radial-gradient(
 		circle,
 		rgba(34, 41, 52, 1) 16%,
-		rgba(24, 32, 42, 1) 100%
+		rgb(19, 25, 32) 100%
 	);
 	border-radius: 25px;
 }
@@ -154,10 +154,13 @@ main {
 }
 
 .rating {
+	display: inline-block;
+	padding: 8px 16px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	background-color: hsl(213deg 20% 18%);
 	color: hsl(26deg 49% 53%);
+	border-radius: 20px;
 }
 .thanks-text {
 	text-align: center;
